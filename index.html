@@ -8,13 +8,21 @@
 
 <style>
 :root {
-  --bg: #0b1220;        /* keep deep base */
-  --card: #36C788;      /* green */
-  --card-hover: #38E096;
+  --bg: #0b1220;
+
+  /* Cards: lighter than before for better contrast, but still dark neutral */
+  --card: #1a2336;
+  --card-hover: #222f47;
+
+  /* Accent green */
+  --accent: #1AB879;
+  --accent-hover: #22d48c;
+
   --text: #e5e7eb;
   --muted: #9ca3af;
-  --accent: #38E096;    /* slightly brighter green */
-  --border: #22314a;
+
+  /* subtle separation line */
+  --border: rgba(26, 184, 121, 0.14);
 }
 
 body {
@@ -25,12 +33,14 @@ body {
   line-height: 1.6;
 }
 
+/* Layout */
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px 20px;
 }
 
+/* Typography */
 h1 {
   font-size: 52px;
   margin-bottom: 5px;
@@ -54,36 +64,41 @@ h2 {
   max-width: 750px;
 }
 
+/* Cards */
 .card {
   background: var(--card);
   padding: 20px;
   border-radius: 12px;
   margin-top: 15px;
-  border: 1px solid var(--border);
-  transition: 0.2s ease;
+
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.2s ease;
 }
 
 .card:hover {
   background: var(--card-hover);
   transform: translateY(-2px);
+  border-color: rgba(26, 184, 121, 0.25);
 }
 
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.btn {
-  box-shadow: 0 4px 12px rgba(96,165,250,0.15);
-}
-
+/* Links */
 a {
   color: var(--accent);
   text-decoration: none;
 }
 
-/* HERO BUTTONS */
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* Buttons */
 .hero-buttons {
   margin-top: 25px;
   display: flex;
@@ -98,6 +113,12 @@ a {
   border-radius: 8px;
   font-weight: bold;
   display: inline-block;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
 }
 
 .btn.secondary {
@@ -106,18 +127,19 @@ a {
   color: var(--accent);
 }
 
+/* Lists */
 ul {
   margin: 0;
   padding-left: 18px;
 }
 
+/* Footer */
 footer {
   margin-top: 80px;
   text-align: center;
   color: var(--muted);
   font-size: 14px;
 }
-
 </style>
 </head>
 
