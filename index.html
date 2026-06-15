@@ -1,263 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Simon Tait | IT Infrastructure Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root {
-      --bg: #0b1220;
-      --card: #111c33;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-    }
+<title>Simon Tait | Infrastructure Engineer</title>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+<style>
+:root {
+  --bg: #0b1220;
+  --card: #111c33;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 5px;
-    }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
 
-    h2 {
-      margin-top: 50px;
-      border-left: 4px solid var(--accent);
-      padding-left: 10px;
-    }
+h1 {
+  font-size: 52px;
+  margin-bottom: 5px;
+}
 
-    .subtitle {
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
+h2 {
+  margin-top: 60px;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+}
 
-    .card {
-      background: var(--card);
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
+.hero-text {
+  margin-top: 15px;
+  color: var(--text);
+  max-width: 750px;
+}
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
 
-    .contact-item {
-      margin-bottom: 6px;
-    }
+.card:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
 
-  </style>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* HERO BUTTONS */
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: var(--accent);
+  color: #0b1220;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-  <!-- HERO -->
+<!-- HERO -->
 <h1>Simon Tait</h1>
-<div class="subtitle">Senior Infrastructure Engineer</div>
-<div class="subtitle">Cape Town, South Africa</div>
+
+<div class="subtitle">
+Infrastructure Engineer | Linux | Networking | Automation | Enterprise Platforms
+</div>
+
+<p class="hero-text">
+Building reliable, secure, and scalable enterprise infrastructure through automation, 
+open-source technologies, and modern platform engineering practices.
+</p>
+
+<div class="hero-buttons">
+  <a class="btn" href="/Simon_Tait_CV_2026.pdf" download>Download CV</a>
+  <a class="btn secondary" href="https://linkedin.com/in/simon-tait-itpro/" target="_blank">LinkedIn</a>
+  <a class="btn secondary" href="mailto:info@simosolutions.co.za">Contact</a>
+</div>
+
+<!-- CURRENT FOCUS -->
+<h2>Current Focus</h2>
 
 <div class="card">
+<ul>
+<li>Infrastructure Automation with Ansible & PowerShell</li>
+<li>Linux Systems Administration & Optimization</li>
+<li>Enterprise Home Lab Development (Multi-VLAN Environment)</li>
+<li>Platform Monitoring, Observability & Alerting</li>
+<li>Infrastructure Documentation & Knowledge Systems</li>
+</ul>
+</div>
 
-  <p>Senior Infrastructure Engineer with hands-on experience designing, securing, and supporting enterprise-grade hybrid environments across on-prem and virtualised infrastructure.</p>
+<!-- SKILLS -->
+<h2>Technical Expertise</h2>
 
-  <p>Strong background in networking, Windows Server administration, and enterprise infrastructure support within complex managed services, project delivery, and in-house IT environments.</p>
+<div class="grid">
 
-  <p>Increasing focus on infrastructure automation, systems optimisation, and scripting-driven operational improvement, with practical experience building and maintaining tooling to reduce manual effort and improve reliability across environments.</p>
+<div class="card">
+<h3>Infrastructure</h3>
+Windows Server<br>
+Linux<br>
+Microsoft 365<br>
+Azure
+</div>
 
-  <p>Advanced working knowledge of Linux systems administration and tooling, alongside solid enterprise networking, firewall management, and core infrastructure services and virtualisation platforms.</p>
+<div class="card">
+<h3>Networking & Security</h3>
+Cisco<br>
+Fortinet<br>
+MikroTik<br>
+UniFi<br>
+OpenWRT<br>
+VLANs & VPNs
+</div>
 
-  <p>Combines deep technical troubleshooting capability with a senior, solution-oriented approach to infrastructure design, resilience, and continuous improvement, with a strong emphasis on root cause analysis and long-term remediation over reactive support.</p>
+<div class="card">
+<h3>Virtualisation</h3>
+VMware vSphere<br>
+Hyper-V<br>
+Proxmox<br>
+Failover Clustering
+</div>
+
+<div class="card">
+<h3>Automation</h3>
+Ansible<br>
+PowerShell<br>
+Bash<br>
+Git<br>
+Docker<br>
+NGINX
+</div>
+
+<div class="card">
+<h3>Monitoring & Ops</h3>
+Veeam<br>
+Grafana<br>
+Prometheus<br>
+Uptime Kuma<br>
+Patch & Incident Management
+</div>
 
 </div>
 
-  <!-- CONTACT -->
-<h2>Contact</h2>
+<!-- HOME LAB -->
+<h2>Enterprise Home Lab</h2>
 
 <div class="card">
 
-  <div>📞 (+27) 070 402 3361</div>
-  <div>✉️ simontait1000@gmail.com</div>
-  <div>✉️ info@simosolutions.co.za</div>
+<p>
+Currently building and documenting an enterprise-style multi-VLAN infrastructure lab designed to replicate real-world environments used in modern infrastructure engineering.
+</p>
 
-  <div>
-    🔗 <a href="https://linkedin.com/in/simon-tait-itpro/" target="_blank">
-      linkedin.com/in/simon-tait-itpro/
-    </a>
-  </div>
+<p><strong>Core Technologies:</strong></p>
 
-  <div>
-    🌐 <a href="https://portfolio.simosolutions.co.za" target="_blank">
-      portfolio.simosolutions.co.za
-    </a>
-  </div>
+<ul>
+<li>Active Directory</li>
+<li>Proxmox Virtualisation</li>
+<li>MikroTik Routing & VLANs</li>
+<li>OpenWRT Access Layer</li>
+<li>WireGuard VPN</li>
+<li>Docker Container Platform</li>
+<li>NGINX Reverse Proxy Architecture</li>
+<li>Ansible Automation</li>
+</ul>
 
-</div>
-
-<!-- HIGHER EDUCATION -->
-<h2>Higher Education</h2>
-
-<div class="card">
-  <p>
-    <strong>Bachelor of IT: Networking & Cyber-Security</strong><br>
-    Tafe NSW, Sydney, Australia
-  </p>
-</div>
-
-<!-- CORE TECHNICAL SKILLS -->
-<h2>Core Technical Skills</h2>
-
-<div class="card">
-
-  <p><strong>Infrastructure & Platforms:</strong><br>
-    Windows Server, Linux, Microsoft 365, Intune, Azure
-  </p>
-
-  <p><strong>Virtualisation & Compute:</strong><br>
-    VMware vSphere, Hyper-V, Proxmox, Failover Clustering
-  </p>
-
-  <p><strong>Networking & Security:</strong><br>
-    Cisco, Meraki, Fortinet, WatchGuard, MikroTik, UniFi, OpenWRT,
-    VLANs, Routing, Switching, VPNs, Firewall Management
-  </p>
-
-  <p><strong>Automation & DevOps:</strong><br>
-    Ansible, PowerShell, Bash, Git, Docker, NGINX, Infrastructure Automation
-  </p>
-
-  <p><strong>Monitoring, Operations & Resilience:</strong><br>
-    Monitoring & Alerting, Incident Management, Patch Management,
-    Vulnerability Remediation, Backup & Recovery, Disaster Recovery,
-    Capacity Planning
-  </p>
-
-  <p><strong>Tooling & Platforms:</strong><br>
-    Veeam, Datto, N-able, Action1, Grafana, Prometheus, Uptime Kuma,
-    Cloudflare, Mimecast, Zoho
-  </p>
+<p><strong>Architecture diagrams and project documentation coming soon.</strong></p>
 
 </div>
 
-<!-- PROFESSIONAL EXPERIENCE -->
+<!-- EXPERIENCE PREVIEW -->
 <h2>Experience</h2>
 
 <div class="card">
 
-  <!-- CYBERLOGIC -->
-  <div class="timeline-item">
-    <h3>Infrastructure Support Engineer</h3>
-    <div class="subtitle">Cyberlogic, Cape Town | February 2026 - Present</div>
+<strong>Infrastructure Support Engineer</strong> — Cyberlogic (2026–Present)
+<br><br>
+Enterprise infrastructure support across hybrid environments including Windows Server, Linux, networking, virtualisation, cloud, and security platforms.
+<br><br>
 
-    <p>
-      Infrastructure Support Engineer within a Managed Solutions Provider, delivering advanced platform and infrastructure support across enterprise hybrid environments. Responsible for maintaining the stability, security, and performance of server, network, virtualisation, cloud, SaaS, disaster recovery, and security platforms across multiple customer environments.
-    </p>
+<strong>Senior Customer Engineer</strong> — Mars Technologies
+<br>
+<strong>2nd Line Engineer</strong> — Ekco (UK)
+<br>
+<strong>IT Systems Administrator</strong> — Browns The Diamond Store
+<br>
+<strong>IT Systems Engineer</strong> — Convensys
+<br>
+<strong>IT Helpdesk Support</strong> — Geeks2u (Sydney)
 
-    <ul>
-      <li>Act as a senior technical escalation point for complex platform and infrastructure incidents across Windows Server, Linux, networking, virtualisation, cloud, SaaS, disaster recovery, and security technologies</li>
-      <li>Lead and contribute to root cause analysis (RCA), incident response, risk assessment, and service restoration activities for major and recurring infrastructure issues</li>
-      <li>Support, administer, and troubleshoot hybrid infrastructure environments, including physical servers, virtualisation platforms, cloud services, enterprise networking, and security appliances</li>
-      <li>Raise, review, and implement infrastructure changes in accordance with change management and operational governance processes</li>
-      <li>Collaborate with internal teams, vendors, and customer stakeholders on upgrades, migrations, integrations, and platform improvements</li>
-      <li>Identify opportunities for automation, operational optimisation, and process improvement to increase reliability and reduce manual effort</li>
-      <li>Maintain technical documentation, operational procedures, and knowledge base resources while providing guidance and mentorship to junior engineers</li>
-      <li>Contribute to infrastructure security, capacity planning, performance tuning, and long-term platform resilience initiatives</li>
-    </ul>
-  </div>
+<br><br>
 
-  <!-- MARS -->
-  <div class="timeline-item">
-    <h3>Senior Customer Engineer</h3>
-    <div class="subtitle">Mars Technologies, Cape Town | December 2025 – February 2026</div>
-
-    <p>
-      Senior Infrastructure Engineer within a managed services environment, supporting both internal and customer enterprise infrastructure. Served as a senior escalation point and decision-making contributor, working closely with the Technical Manager to deliver infrastructure stability, operational improvements, and technical leadership.
-    </p>
-
-    <p>
-      Supported Windows Server, Microsoft 365, networking, virtualisation, hosting, backup and disaster recovery platforms across hybrid environments. Led patch management, vulnerability remediation, monitoring, reporting, and infrastructure optimisation initiatives while supporting a nationwide engineering team. Maintained ownership of key platform management and automation processes, helping improve operational efficiency, system stability, and compliance outcomes.
-    </p>
-
-    <p>
-      Partnered with customer IT stakeholders to align technical solutions with business requirements, contribute to infrastructure upgrades and service improvements, and drive long-term resilience across enterprise environments.
-    </p>
-  </div>
-
-  <!-- EKCO -->
-  <div class="timeline-item">
-    <h3>2nd Line Engineer (Global Service Desk)</h3>
-    <div class="subtitle">Ekco (UK), Cape Town | Dec 2023 – August 2025</div>
-
-    <ul>
-      <li>Delivered 24/7 infrastructure and platform support across global managed service environments supporting 500+ customer organisations</li>
-      <li>Diagnosed and resolved complex server, network, cloud, and security incidents while managing escalations and major incident response activities</li>
-      <li>Collaborated closely with senior engineers on root cause analysis, change management, and service restoration for high-impact incidents</li>
-      <li>Monitored enterprise infrastructure, networks and services, performing proactive investigation, remediation, patching, upgrades, approved change implementation, and operational improvement activities</li>
-      <li>Provided technical leadership, mentorship, and escalation support to junior engineers and service desk teams</li>
-    </ul>
-  </div>
-
-  <!-- BROWNS -->
-  <div class="timeline-item">
-    <h3>IT Systems Administrator</h3>
-    <div class="subtitle">Browns The Diamond Store, Johannesburg | July 2021 - September 2023</div>
-
-    <ul>
-      <li>Managed enterprise IT operations supporting Head Office, manufacturing facilities, and 40+ retail locations across South Africa</li>
-      <li>Administered core infrastructure, networking, security, and business-critical systems supporting 350+ users</li>
-      <li>Delivered and coordinated infrastructure projects including migrations, upgrades, disaster recovery solutions, and technology refresh initiatives</li>
-      <li>Led the Solutions Centre team, providing technical leadership, skills development, and operational support</li>
-      <li>Collaborated with business stakeholders to identify and implement technology improvements that enhanced reliability, efficiency, and service delivery</li>
-    </ul>
-  </div>
-
-  <!-- CONVENSYS -->
-  <div class="timeline-item">
-    <h3>IT Systems Engineer</h3>
-    <div class="subtitle">Convensys, Sydney (Australia) | July 2018 - April 2021</div>
-
-    <ul>
-      <li>Designed, deployed, and supported enterprise networking, infrastructure, and cyber-security solutions as part of a Cisco partner environment</li>
-      <li>Led infrastructure projects from planning through implementation, coordinating technical teams and external stakeholders</li>
-      <li>Managed customer networks, servers, and business systems while providing advanced technical support and consultancy services</li>
-      <li>Performed infrastructure reviews, testing, and optimisation activities to improve performance, reliability, and long-term sustainability</li>
-      <li>Developed technical documentation, operational procedures, and customer training materials</li>
-      <li>Collaborated with sales teams on solution design, proof-of-concept testing, and technical pre-sales engagements</li>
-    </ul>
-  </div>
-
-  <!-- GEEKS2U -->
-  <div class="timeline-item">
-    <h3>IT Helpdesk Support</h3>
-    <div class="subtitle">Geeks2u, Sydney (Australia) | December 2016 - June 2018</div>
-
-    <ul>
-      <li>Provided onsite and remote technical support to residential and small business customers</li>
-      <li>Installed, configured, and supported hardware, software, operating systems, and peripheral devices</li>
-      <li>Diagnosed and resolved a broad range of technical issues across desktop, networking, and consumer IT environments</li>
-      <li>Delivered customer-focused technical guidance, documentation, and recommendations</li>
-    </ul>
-  </div>
+<a href="/Simon_Tait_CV_2026.pdf" download>
+View Full CV →
+</a>
 
 </div>
+
+<!-- EDUCATION -->
+<h2>Education</h2>
+
+<div class="card">
+Bachelor of IT: Networking & Cyber-Security<br>
+Tafe NSW, Sydney, Australia
+</div>
+
+<!-- FOOTER -->
+<footer>
+Cape Town, South Africa • Infrastructure Engineer Portfolio
+</footer>
+
+</div>
+
+</body>
+</html>
