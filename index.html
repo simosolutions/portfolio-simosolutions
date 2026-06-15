@@ -8,11 +8,13 @@
 
 <style>
 :root {
-  --bg: #0b1220;
-  --card: #111c33;
+  --bg: #0b1220;        /* keep deep base */
+  --card: #162238;      /* lighter, clearer separation */
+  --card-hover: #1c2c47;
   --text: #e5e7eb;
   --muted: #9ca3af;
-  --accent: #38bdf8;
+  --accent: #4aa3ff;    /* slightly brighter blue */
+  --border: #22314a;
 }
 
 body {
@@ -57,11 +59,13 @@ h2 {
   padding: 20px;
   border-radius: 12px;
   margin-top: 15px;
+  border: 1px solid var(--border);
+  transition: 0.2s ease;
 }
 
 .card:hover {
+  background: var(--card-hover);
   transform: translateY(-2px);
-  transition: 0.2s ease;
 }
 
 .grid {
